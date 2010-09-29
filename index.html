@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Thimbl</title>
+        <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/reset/reset-min.css"/>
+        <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/fonts/fonts-min.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    </head>
+    <body>
+        <header>
+        	<img src="logo.png"  />
+            <nav>
+            	<ul>
+                    <li><a>Home</a><span id="arrow"></span></li>
+                    <li><a>Profile</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a>Sign Out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="profile">
+                <table class="clearfix">
+            	<thead>
+                    <tr>
+                        <th colspan="2">
+                            Anthony Shull
+                        </th>
+                    </tr>
+                </thead>
+           		<tbody>
+                    <tr>
+                        <td>Name</td>
+                        <td id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Bio</td>
+                        <td id="bio"></td>
+                    </tr>
+                    <tr>
+                        <td>Website</td>
+                        <td id="website"></td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td id="mobile"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="main" class="clearfix">
+            <div id="posts">
+            </div>
+            <div id="sidebar">
+                <h3>Following</h3>
+            </div>
+        </div>
+      <script type="text/javascript" src="cookies.js"></script>
+      <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
