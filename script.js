@@ -88,8 +88,7 @@ var insertingText = "";
                    $('div#posts').append(insertingText);
 
 });
-	var linkToMore = "<div class='post linkToMore'><a>Show More</a></div>";
-	$('div#posts').append(linkToMore);
+
 }
 
 $.ajax({
@@ -188,7 +187,7 @@ profile.get = function() {
         $('td#website').html('<a href="' + profile.website + '">' + profile.website + '</a>');
         $('td#email').html(profile.email);
         $('td#mobile').html(profile.mobile);
-        $('#profile').prepend('<img src="' + profile.avatar + '" alt="' + profile.name + '" />');
+        $('#profile').prepend('<img src="' + profile.avatar + '" id="avatar" alt="' + profile.name + '" />');
     }
     profileWorker.postMessage(localStorage.getItem('plan'));
 
@@ -236,7 +235,10 @@ replies.set = function() {
     replies.get();
 }
 
-profile.get();
-posts.get();
-following.get();
 
+// BOOTSTRAP THE APP
+(function(){
+    profile.get();
+    posts.get();
+    following.get();
+}());

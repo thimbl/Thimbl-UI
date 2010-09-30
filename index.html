@@ -12,23 +12,14 @@
         <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     </head>
     <body>
-        <header>
-        	<img src="logo.png"  />
-            <nav>
-            	<ul>
-                    <li><a>Home</a><span id="arrow"></span></li>
-                    <li><a>Profile</a></li>
-                    <li><a>Settings</a></li>
-                    <li><a>Sign Out</a></li>
-                </ul>
-            </nav>
-        </header>
+        <div id="wrapper">
+        <img id="logo" src="logo.png"  />
         <div id="profile">
                 <table class="clearfix">
             	<thead>
                     <tr>
                         <th colspan="2">
-                            Anthony Shull
+                            
                         </th>
                     </tr>
                 </thead>
@@ -55,14 +46,22 @@
                     </tr>
                 </tbody>
             </table>
+            <a href="" id="editProfile">Edit Profile</a></div>
         </div>
         <div id="main" class="clearfix">
             <div id="posts">
+                <div class="userPost">
+                    <form>
+                        <textarea placeholder="What're you up to?" class="userPost"></textarea>
+                        <input type="submit" value="POST"></input>
+                    </form>
+                </div>
             </div>
             <div id="sidebar">
                 <h3>Following</h3>
             </div>
         </div>
+    </div>
       <script type="text/javascript" src="cookies.js"></script>
       <script type="text/javascript" src="script.js"></script>
     </body>
